@@ -1,0 +1,8 @@
+
+tsquid:S1450 "VRemove the "program" field and declare it as a local variable in the relevant methods.(û×Û™8ü¸„¸ò-
+~squid:S1450"`Remove the "conflictViewModel" field and declare it as a local variable in the relevant methods.(ÍüÅû8ü¸„¸ò-
+ƒsquid:S1845 "eRename field "program" to prevent any misunderstanding/clash with field "PROGRAM" defined on line 29.(û×Û™8ü¸„¸ò-
+Esquid:S1068"'Remove this unused "TAG" private field.(Ñ†Æ‚8ü¸„¸ò-
+ƒsquid:S1450"fRemove the "conflictActivityBinding" field and declare it as a local variable in the relevant methods.(ñ‹¾*8ü¸„¸ò-
+lsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(†²”8ü¸„¸ò-
+{squid:S1450!"XRemove the "component" field and declare it as a local variable in the relevant methods.( ÓÓÚûÿÿÿÿ8–‚†¸ò-

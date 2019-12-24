@@ -1,0 +1,8 @@
+
+Vsquid:S1126"AReplace this if-then-else statement by a single return statement.(ÕŸ¼²
+?squid:S1068"+Remove this unused "context" private field.(êİç
+Rsquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+`squid:S1192"FDefine a constant instead of duplicating this literal "title" 3 times.(„µÅÛùÿÿÿÿ
+Csquid:S1068".Remove this unused "DB_VERSION" private field.(¸İÈ²
+fsquid:S1192"LDefine a constant instead of duplicating this literal "recordingId" 3 times.(ºËéÿÿÿÿÿ
+Rsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ

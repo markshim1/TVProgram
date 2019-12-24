@@ -1,0 +1,7 @@
+
+asquid:S1854=">Remove this useless assignment to local variable "disposable".(ŒšüĞúÿÿÿÿ8ò†€¥ò-
+Nsquid:S1172*"+Remove this unused method parameter "view".(Ü”Üşÿÿÿÿ8ò†€¥ò-
+Nsquid:S1172/"+Remove this unused method parameter "view".(¹ÒÂÈøÿÿÿÿ8½ˆÁ¸ó-
+Ÿsquid:S1186T"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(×İŠÎ8ò†€¥ò-
+Rsquid:S1481="/Remove this unused "disposable" local variable.(ŒšüĞúÿÿÿÿ8ò†€¥ò-
+xsquid:UselessImportCheck"HRemove this unused import 'com.example.markshim.tvprogram.MainActivity'.(Éªóªúÿÿÿÿ8šÎ¸ó-

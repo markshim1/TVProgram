@@ -1,0 +1,8 @@
+
+Isquid:S1172<"+Remove this unused method parameter "view".(òýª8£æë´ò-
+]squid:S1854K":Remove this useless assignment to local variable "result".(ºØòŒøÿÿÿÿ8£æë´ò-
+Ÿsquid:S1186Y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(×ÝŠÎ8£æë´ò-
+Nsquid:S1481K"+Remove this unused "result" local variable.(ºØòŒøÿÿÿÿ8£æë´ò-
+asquid:S1854D">Remove this useless assignment to local variable "disposable".(ŒšüÐúÿÿÿÿ8£æë´ò-
+Rsquid:S1481D"/Remove this unused "disposable" local variable.(ŒšüÐúÿÿÿÿ8£æë´ò-
+Isquid:S1068"+Remove this unused "program" private field.(û×Û™8£æë´ò-

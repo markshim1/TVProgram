@@ -106,21 +106,29 @@ public class ItemProgramViewModel extends BaseObservable {
 
     private void showCancel(int id) {
         Log.w(TAG, "Already booked recording id = " + dbManager.getRecordingId(id));
+        Bundle bundle = getBookingBundle(id);
+        CancelFragment cancelFragment = getCancelFragment(bundle);
+
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.addToBackStack("ProgramFragment");
+        fragmentTransaction.replace(R.id.content, cancelFragment);
+        fragmentTransaction.commit();
+    }
+
+    private CancelFragment getCancelFragment(Bundle bundle) {
+        CancelFragment cancelFragment = new CancelFragment();
+        cancelFragment.setArguments(bundle);
+        return cancelFragment;
+    }
+
+    private Bundle getBookingBundle(int id) {
         Booking booking = new Booking();
         booking.setTitle(program.getTitle());
         booking.setRecordingId(dbManager.getRecordingId(id));
 
         Bundle bundle = new Bundle();
         bundle.putSerializable("BOOKING", booking);
-
-        CancelFragment cancelFragment = new CancelFragment();
-        cancelFragment.setArguments(bundle);
-
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        fragmentTransaction.addToBackStack("ProgramFragment");
-        fragmentTransaction.replace(R.id.content, cancelFragment);
-        fragmentTransaction.commit();
+        return bundle;
     }
 
 

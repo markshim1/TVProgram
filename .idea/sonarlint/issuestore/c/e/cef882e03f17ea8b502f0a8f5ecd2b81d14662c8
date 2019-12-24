@@ -1,0 +1,7 @@
+
+hsquid:HiddenFieldCheckD"?Rename "programList" which hides the field declared at line 33.(≤æõê8‰ÇÍ¥Ú-
+è"squid:ClassVariableVisibilityCheck#"[Make programRecycler a static final constant or non-public and provide accessors if needed.(‰≈Ã8‰ÇÍ¥Ú-
+asquid:S1854<">Remove this useless assignment to local variable "disposable".(¬ù˝Ø˛ˇˇˇˇ8‰ÇÍ¥Ú-
+\squid:S1155n">Use isEmpty() to check whether the collection is empty or not.(≥Ê¯ø8‰ÇÍ¥Ú-
+Rsquid:S1481<"/Remove this unused "disposable" local variable.(¬ù˝Ø˛ˇˇˇˇ8‰ÇÍ¥Ú-
+â"squid:ClassVariableVisibilityCheck""TMake progress a static final constant or non-public and provide accessors if needed.(ˆ∆Ò¨8‰ÇÍ¥Ú-
