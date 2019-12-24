@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="itemProgramViewModel"
+            type="com.example.markshim.tvprogram.viewmodel.ItemProgramViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/item_program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{itemProgramViewModel::onItemClick}"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_item_movie_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="CH"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@{itemProgramViewModel.channel}"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_program"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    tools:imageUrl="@{itemProgramViewModel.poster}"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:baselineAligned="true"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <TextView
+                        android:id="@+id/label_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@{itemProgramViewModel.title}"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/label_starttime"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@{itemProgramViewModel.dateView}"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/label_duration"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@{itemProgramViewModel.runningTimeView}"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="75dp"
+                    android:layout_above="@+id/label_starttime"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/image_program"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="@{itemProgramViewModel.bookingView}"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</layout>
